@@ -1,17 +1,16 @@
-function handleClick(){
-
-    console.log('button clicked');
+function isMobile() {
+  const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  return regex.test(navigator.userAgent);
 }
+
+let isMobileResponse = isMobile()
+
 
 let count = 0;
 
 function handleFirstHover(event){
 
     let target = event.target;
-
-    let x = Math.floor(Math.random(0,1) * 100);
-
-    let y = Math.floor(Math.random(0,1) * 100);
 
     target.style.position="absolute";
 
@@ -25,10 +24,6 @@ function handleSecondHover(event){
 
     let target = event.target;
 
-    let x = Math.floor(Math.random(0,1) * 100);
-
-    let y = Math.floor(Math.random(0,1) * 100);
-
     target.style.position="absolute";
 
     target.style.top="10px";
@@ -40,10 +35,6 @@ function handleSecondHover(event){
 function handleThirdHover(event){
 
     let target = event.target;
-
-    let x = Math.floor(Math.random(0,1) * 100);
-
-    let y = Math.floor(Math.random(0,1) * 100);
 
     target.style.position="absolute";
 
@@ -57,10 +48,6 @@ function handleFourthHover(event){
 
     let target = event.target;
 
-    let x = Math.floor(Math.random(0,1) * 100);
-
-    let y = Math.floor(Math.random(0,1) * 100);
-
     target.style.position="absolute";
 
     target.style.top="0px";
@@ -73,10 +60,6 @@ function handleFifthHover(event){
 
     let target = event.target;
 
-    let x = Math.floor(Math.random(0,1) * 100);
-
-    let y = Math.floor(Math.random(0,1) * 100);
-
     target.style.position="absolute";
 
     target.style.top="100px";
@@ -87,7 +70,8 @@ function handleFifthHover(event){
 function handleHover(event){
 
     if (count == 7){
-        alert("haha budhdhu! mummy ka favourite bachcha mein hoon! :P")
+        alert("buddhu banaya bada maza aya!, happy birthday :P")
+        location.reload()
     }
 
     if(count % 5 == 0){
