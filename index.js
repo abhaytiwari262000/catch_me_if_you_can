@@ -10,8 +10,6 @@ let count = 0;
 
 function handleFirstHover(event){
 
-    event.preventDefault()
-
     let target = event.target;
 
     target.style.position="absolute";
@@ -70,6 +68,8 @@ function handleFifthHover(event){
 
 }
 function handleHover(event){
+
+    event.preventDefault()
 
     if (count == 7){
         alert("buddhu banaya bada maza aya!, happy birthday :P")
