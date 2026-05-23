@@ -1,5 +1,6 @@
 button{
     background-color: transparent;
+    color: black;
     -webkit-tap-highlight-color: transparent;
     border-color: black;
     border-width: thin;
