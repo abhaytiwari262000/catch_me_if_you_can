@@ -10,6 +10,8 @@ let count = 0;
 
 function handleFirstHover(event){
 
+    event.preventDefault()
+
     let target = event.target;
 
     target.style.position="absolute";
