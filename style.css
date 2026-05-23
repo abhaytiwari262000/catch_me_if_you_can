@@ -1,6 +1,7 @@
 button{
     background-color: transparent;
     -webkit-tap-highlight-color: transparent;
+    border-color: black;
     border-width: thin;
     border-radius: 50px;
 }
