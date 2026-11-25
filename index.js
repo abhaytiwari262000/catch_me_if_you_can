@@ -5,7 +5,10 @@ function isMobile() {
 
 let isMobileResponse = isMobile()
 
-
+function handleYes(){
+        alert("See you in cantt 🫡");
+        location.reload();
+}
 let count = 0;
 
 function handleFirstHover(event){
@@ -14,7 +17,7 @@ function handleFirstHover(event){
 
     target.style.position="absolute";
 
-    target.style.top="100px";
+    target.style.top="400px";
 
     target.style.left="100px";
 
@@ -26,7 +29,7 @@ function handleSecondHover(event){
 
     target.style.position="absolute";
 
-    target.style.top="10px";
+    target.style.top="500px";
 
     target.style.left="100px";
 
@@ -38,9 +41,9 @@ function handleThirdHover(event){
 
     target.style.position="absolute";
 
-    target.style.top="100px";
+    target.style.top="500px";
 
-    target.style.left="100px";
+    target.style.left="50px";
 
 }
 
@@ -50,9 +53,9 @@ function handleFourthHover(event){
 
     target.style.position="absolute";
 
-    target.style.top="0px";
+    target.style.top="500px";
 
-    target.style.left="0px";
+    target.style.left="1px";
 
 }
 
@@ -60,7 +63,7 @@ function handleFifthHover(event){
 
     let target = event.target;
 
-    target.style.position="absolute";
+    target.style.display = "none";
 
     target.style.top="100px";
 
@@ -71,10 +74,10 @@ function handleHover(event){
 
     event.preventDefault()
 
-    if (count == 7){
-        alert("buddhu banaya bada maza aya!, happy birthday :P")
-        location.reload()
-    }
+    // if (count == 4){
+    //     alert("buddhu banaya bada maza aya!, happy birthday :P")
+    //     location.reload()
+    // }
 
     if(count % 5 == 0){
         handleFirstHover(event);

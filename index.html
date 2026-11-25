@@ -1,21 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <title>Catch me if you can</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <button onmouseover="handleHover(event)" ontouchstart="handleHover()">
-        Click me!
-    </button>
+  <body>
+    <div class="outline">
+      <div class="info-box">
+        <div id="heading">FRIENDSHIP APPLICATION</div>
+        <p>
+          NAME : ABHAY TIWARI <br />
+          PACE : 6:30 MIN/KM
+        </p>
+        <p>
+          This application is on account of what happened on the night of 15
+          November 2026, when I made arguably funny remarks about your slow
+          pace. This is a formal apology letter assuring you that I will never
+          make any official or casual remarks about your slow pace.
+
+        </p>
+        <br>
+        <p>APPLICATION ACCEPTED?</p>
+      </div>
+
+      <button onclick="handleYes()" ontouchstart="handleYes()">
+        Yes
+      </button>
+      <button onmouseover="handleHover(event)" ontouchstart="handleHover()">
+        Cancel
+      </button>
+    </div>
+
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
-

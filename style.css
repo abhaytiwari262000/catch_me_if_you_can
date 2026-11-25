@@ -5,4 +5,26 @@ button{
     border-color: black;
     border-width: thin;
     border-radius: 50px;
+    height: 20px;
+    width: 100px;
+}
+
+.outline{
+    padding-top: 10px;
+    border: 2px solid black;
+    height: 96vh;
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.info-box{
+    justify-self: flex-start;
+}
+
+p{
+    width: 300px;
 }
